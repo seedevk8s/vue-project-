@@ -23,6 +23,8 @@ const rect2 = {
 }
 
 let loading3 = true
+
+const fruits2 = ["apple", "banana", "pear"]
 </script>
 
 <template>
@@ -82,6 +84,12 @@ let loading3 = true
 
   <template v-show="true">로딩 중2</template>
 
+  <div v-for="f in fruits2">{{ f }}</div>
+  <br>
+
+  <div v-for="(f, idx) in fruits2">{{ idx }} {{ f }}</div>
+
+  <template v-for="f in fruits2"> {{ f }} </template>
 </template>
 
 
