@@ -14,6 +14,15 @@ const fruitArr = ["banana", "blueberry"]
 
 const visible = {fruit: true}
 const hidden = {fruit: false}
+
+const rect = "background:red;width:200px;height:100px"
+const rect2 = {
+  background: "blue",
+  width: "200px",
+  height: "200px"
+}
+
+let loading3 = true
 </script>
 
 <template>
@@ -52,5 +61,40 @@ const hidden = {fruit: false}
   <div :class="visible">사과</div>
   <div :class="hidden">오이</div>
   <div :class="{fruit: true}">배</div>
+  <br>
+
+  <div :style="rect"></div>
+  <div :style="rect2"></div>
+  <br>
+
+  <div v-if="loading3">로딩 중</div>
+  <div v-else>로딩 완료</div>
+  <br>
+
+  <template v-if="loading3">로딩 중</template>
+  <template v-else>로딩 완료</template>
+  <br>
+
+  <template>
+    <div v-show="loading3">로딩 중</div>
+    <div v-show="!loading3">로딩 완료</div>
+  </template>
+
+  <template v-show="true">로딩 중2</template>
 
 </template>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
