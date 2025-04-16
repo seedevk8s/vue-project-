@@ -21,7 +21,8 @@ import { createPinia } from 'pinia'
 //import App from './App16.vue'
 //import App from './App17.vue'
 //import App from './App18.vue'
-import App from './App19.vue'
+//import App from './App19.vue'
+import App from './App20.vue'
 import router from './router'
 
 const app = createApp(App)
